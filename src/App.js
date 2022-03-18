@@ -1,7 +1,13 @@
+import Header from './components/Layout/Header';
+import Meals from './components/Meals/Meals';
+import Modal from './components/UI/Modal';
+
 function App() {
   return (
     <div>
-      <h2>Let's get started!</h2>
+      <Modal />
+      <Header />
+      <Meals />
     </div>
   );
 }
