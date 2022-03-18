@@ -1,18 +1,21 @@
 import classes from './Cart.module.css';
+import Modal from '../UI/Modal';
 
-const Cart = () => {
+const Cart = (props) => {
   return (
-    <div>
-      <div className={classes['cart-items']}></div>
+    <Modal hideCart={props.onHideCart}>
+      <div className={classes['cart-items']}>Sushi</div>
       <div className={classes.total}>
-        <h3>Total Amount:</h3>
-        <h3>32.55</h3>
+        <h4>Total Amount:</h4>
+        <h4>32.55</h4>
       </div>
       <div className={classes.actions}>
-        <button>Close</button>
+        <button className={classes['button--alt']} onClick={props.onHideCart}>
+          Close
+        </button>
         <button>Order</button>
       </div>
-    </div>
+    </Modal>
   );
 };
 
