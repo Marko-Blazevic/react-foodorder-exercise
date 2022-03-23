@@ -4,10 +4,10 @@ import classes from './Input.module.css';
 
 const Input = React.forwardRef((props, ref) => {
   return (
-    <form className={classes.input}>
+    <div className={classes.input}>
       <label htmlFor={props.input.id}>{props.label}</label>
       <input ref={ref} id={props.input.id} {...props.input} />
-    </form>
+    </div>
   );
 });
 
