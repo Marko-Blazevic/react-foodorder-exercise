@@ -34,10 +34,12 @@
   background-color: #5a1a01;
   border-color: #5a1a01;
   color: white;
+  box-shadow: 0 0 3px #cf653b;
 }
 
 .actions .button--alt {
-  color: #8a2b06;
+  background-color: #5a1a01;
+  color: #ffffff;
 }
 
 .actions .button {
